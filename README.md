@@ -352,7 +352,6 @@ titanic.survival.train.ctree
 plot(titanic.survival.train.ctree)
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
 
 
 ===================================================================
@@ -559,8 +558,6 @@ jCountry <- "France"
 ```r
 xyplot(lifeExp ~ year, jDat, type = c("p", "r"))
 ```
-
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18.png) 
 
 
 
@@ -1317,7 +1314,6 @@ df <- scale(wine[-1])
 wssplot(df)
 ```
 
-![plot of chunk unnamed-chunk-55](figure/unnamed-chunk-55.png) 
 
 
 ### #2 Determine the number of clusters
@@ -1327,13 +1323,11 @@ set.seed(1234)
 nc <- NbClust(df, min.nc = 2, max.nc = 15, method = "kmeans")
 ```
 
-![plot of chunk unnamed-chunk-56](figure/unnamed-chunk-561.png) 
 
 ```
 ## [1] "*** : The Hubert index is a graphical method of determining the number of clusters. In the plot of Hubert index, we seek a significant knee that corresponds to a significant increase of the value of the measure i.e the significant peak in Hubert index second differences plot."
 ```
 
-![plot of chunk unnamed-chunk-56](figure/unnamed-chunk-562.png) 
 
 ```
 ## [1] "*** : The D index is a graphical method of determining the number of clusters. In the plot of D index, we seek a significant knee (the significant peak in Dindex second differences plot) that corresponds to a significant increase of the value of the measure."
@@ -1358,8 +1352,6 @@ table(nc$Best.n[1, ])
 barplot(table(nc$Best.n[1, ]), xlab = "Numer of Clusters", ylab = "Number of Criteria", 
     main = "Number of Clusters Chosen by 26 Criteria")
 ```
-
-![plot of chunk unnamed-chunk-57](figure/unnamed-chunk-57.png) 
 
 
 
